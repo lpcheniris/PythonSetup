@@ -1,0 +1,1 @@
+docker run -d  --name py_setup_code_mongo -v /Users/clp/workspace/blockchain/python/PythonSetupCode/db/init.sh:/docker-entrypoint-initdb.d/init.sh     -e MONGO_INITDB_ROOT_USERNAME=mongoadmin     -e MONGO_INITDB_ROOT_PASSWORD=secret     -p 27018:27017  -e MONGO_INITDB_DATABASE=pythonsetupcode   mongo
